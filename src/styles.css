@@ -164,6 +164,7 @@ display: flex;
 justify-content: space-around;
 }
 
+
     
 .project-image {
     margin-top: 25px;
@@ -196,6 +197,36 @@ justify-content: space-around;
         align-self: flex-end;
         
     }
+
+    
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+
+    .skills-list {
+        background-color: transparent;
+    }
+
+    .formList {
+        background-color: transparent;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+
+
+    }
+
+    .logo {
+        display: none;
+    }
+    
+  
 }
 
 form {
@@ -226,7 +257,7 @@ form {
     /* Uniform size & alignment */
     display: inline-block;
     width: 100px;
-    text-align: right; 
+    text-align: right;
     
 
     }
