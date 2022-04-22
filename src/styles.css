@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -20,8 +21,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 80px;
-
+    padding: 2em;
 } 
 
 nav {
@@ -164,7 +164,6 @@ display: flex;
 justify-content: space-around;
 }
 
-
     
 .project-image {
     margin-top: 25px;
@@ -180,10 +179,97 @@ justify-content: space-around;
     outline: 0;
 }
 
+/* Style inputs, select elements and textareas */
+input[type=email], input[type=subject], select, textarea {
+    width: 100%;
+    padding: 15px;
+    /*border: 1px solid #ccc;*/
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 20px;
+  }
+  
+  /* Style the label to display next to the inputs */
+  label {
+    padding: 15px 15px 15px 0px;
+    display: inline-block;
+    font-size: 20px;
+  }
+  
+  /* Style the submit button */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: top 6px;
+    float: right;
+    font-size: 20px;
+  }
+  
+  /* Style the container */
+  .container {
+    box-sizing: border-box;
+    margin: 6px auto;
+    width: 30%;
+    text-align: left;
+    border: 2px solid white;
+    border-radius: 2em;
+    /*background-color: #f2f2f2;*/
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+  
+/*@media only screen and (max-width: 1900px) {
+    .container {
+      width: 50%;
+     
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 60%;
+         
+    }
+}*/
+
 @media only screen and (max-width: 1000px){
     .project-container {
         display: flex;
         flex-wrap: wrap;
+
+    }
+
+    .skills-list {
+        background-color: transparent;
     }
 }
 
@@ -206,14 +292,10 @@ justify-content: space-around;
         margin: 0px;
     }
 
-    .skills-list {
-        background-color: transparent;
-    }
+   
+    
 
-    .formList {
-        background-color: transparent;
-    }
-
+    
     nav {
         display: flex;
         flex-direction: column-reverse;
@@ -225,92 +307,27 @@ justify-content: space-around;
     .logo {
         display: none;
     }
+
+    .container, .col-25, .col-75, button {
+        width: 100%;
+        margin-top: 0;
+      }
     
   
 }
 
-form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 510px;
-    /* Form outline */
-    padding: 2em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-  }
-  
-  .formList {
-    width:fit-content;
-    display: block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 20px;
-    
-  }
-  
-  form li + li {
-    margin-top: 2em;
-  }
-  
-  label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    width: 100px;
-    text-align: right;
-    
-
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 70%;
+             
     }
-  
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
-  
-    /* Uniform text field size */
-    width: 400px;
-    box-sizing: border-box;
-  
-    /* Match form field borders */
-    border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-  
-    /* Provide space to type some text */
-    height: 5em;
-  }
-  
-  .cbutton {
-    /* Align buttons with the text fields */
-    width: 200px;
-    margin-top: 2em;
-    font-size: 20px;
-   
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 1em;
-  }
+}
 
-
-
-
-  
-  button[type="submit"]:hover {
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-  }
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*@media only screen and (max-width: 600px) {
+    .container, .col-25, .col-75, button {
+      width: 100%;
+      margin-top: 0;
+    }
+}*/
 
